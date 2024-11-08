@@ -4,6 +4,7 @@ package org.example;
 import org.example.hw2_task1.Book;
 import org.example.hw2_task2.Student;
 import org.example.hw2_task3.Point;
+import org.example.hw2_task4.Clock;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,6 +41,15 @@ public class Main {
 
         System.out.println(test_point.getX() +" "+ test_point.getY());
 
+
+        Clock test_clock = new Clock();
+        test_clock.setHour(23);
+        test_clock.setMinute(23);
+        test_clock.setSecond(23);
+
+        test_clock.readTick();
+        test_clock.tick();
+        test_clock.readTick();
     }
 
 }
