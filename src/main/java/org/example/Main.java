@@ -3,6 +3,7 @@ package org.example;
 
 import org.example.hw2_task1.Book;
 import org.example.hw2_task2.Student;
+import org.example.hw2_task3.Point;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,10 +18,6 @@ public class Main {
         String name = test_book.getName();
         int year = test_book.getPublish_year();
 
-        /*System.out.println(author);
-        System.out.println(name);
-        System.out.println(year);*/
-
         test_book.display();
 
         Student test_student = new Student();
@@ -30,6 +27,18 @@ public class Main {
         test_student.setIndex(98324);
 
         test_student.print();
+
+
+
+        Point test_point = new Point();
+
+        test_point.setX(20);
+        test_point.setY(5);
+
+        test_point.moveDown();
+        test_point.moveLeft();
+
+        System.out.println(test_point.getX() +" "+ test_point.getY());
 
     }
 
